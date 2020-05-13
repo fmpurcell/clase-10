@@ -54,7 +54,7 @@
         var texto = ["¿Qué semillas se recomienda usar?", "¿Cómo y cuando plantar?", "Cuidados de la planta", "Beneficios de plantar y cultivar en casa", "Plantas medicinales", "Arma tu propio huerto"];
         // Referencias para lo que sigue https://api.jquery.com/jquery.each/ ({ https://api.jquery.com/append/ })
         $.each( texto, function( i, frase ) {
-            $("#articulos").append("<div class='col-lg-6 col-xl-4 mb-4'><article class='bg-primary text-light p-3 shadow-sm rounded'>"+frase+"</article></div>");
+            $("#articulos").append("<div class='col-md-6 col-lg-4 col-xl-3 mb-4'><article class='bg-primary text-light p-3 shadow-sm rounded'>"+frase+"</article></div>");
         });
         // Lo que sigue aprovecha Bootstrap y jQuery. Afecta a la proporción del video embebido, quitando/poniendo una clase
         $(window).bind("load resize",function() {
